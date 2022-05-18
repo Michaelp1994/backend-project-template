@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    container_name: asset_management_db
+    image: "postgres"
+    environment:
+      POSTGRES_USER: michaelpoulgrain
+      POSTGRES_DB: asset_management
+      POSTGRES_PASSWORD: sBxJ[7k<gj<8BxF-
+    ports:
+      - 5432:5432
+    volumes:
+      - ./database/data:/var/lib/postgresql/data
